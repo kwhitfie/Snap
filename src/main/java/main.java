@@ -7,5 +7,11 @@ public class main {
 
         cg.sortDeckIntoSuits();
         System.out.println("Suit order: "+cg.deck);
+
+        cg.shuffleDeck();
+        System.out.println("Shuffled: "+cg.deck);
+
+        System.out.println("Deal card: "+cg.dealCard());
+
     }
 }

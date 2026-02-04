@@ -27,7 +27,7 @@ public class CardGame {
     }
 
     public Card dealCard(){
-        return null;
+        return deck.get(0);
     }
 
     public ArrayList<Card> sortDeckIntoSuits(){
@@ -41,6 +41,7 @@ public class CardGame {
     }
 
     public ArrayList<Card> shuffleDeck(){
-        return null;
+        Collections.shuffle(deck);
+        return deck;
     }
 }
