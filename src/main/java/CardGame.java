@@ -5,12 +5,14 @@ public class CardGame {
 
     public ArrayList<Card> deck = new ArrayList<>();
     String name;
+    int currentCard = 0;
 
     CardGame(String name) {
         this.name = name;
         //Populate deck with cards
         String[] suits = {"♠", "♥", "♦", "♣"};
         String[] symbols = {"2","3","4","5","6","7","8","9","10","J","Q","K","A"};
+
 
         int i = 2;
         for(String suit:suits){
@@ -27,7 +29,11 @@ public class CardGame {
     }
 
     public Card dealCard(){
-        return deck.get(0);
+        if(currentCard >= deck.size()){
+            shuffleDeck();
+            currentCard = 0;
+        }
+        return deck.get(currentCard++);
     }
 
     public ArrayList<Card> sortDeckIntoSuits(){
