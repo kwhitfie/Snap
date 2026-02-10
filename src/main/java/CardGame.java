@@ -13,7 +13,7 @@ public class CardGame {
         String[] suits = {"♠", "♥", "♦", "♣"};
         String[] symbols = {"2","3","4","5","6","7","8","9","10","J","Q","K","A"};
 
-
+        //Loops through the two arrays to create all cards on instantiation
         int i = 2;
         for(String suit:suits){
             for(String symbol:symbols){
