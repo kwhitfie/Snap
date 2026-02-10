@@ -1,6 +1,4 @@
-import java.util.Locale;
 import java.util.Scanner;
-import java.util.Timer;
 
 public class Snap extends CardGame{
 
@@ -19,7 +17,7 @@ public class Snap extends CardGame{
     void start(){
         scanner = new Scanner(System.in);
         shuffleDeck();
-        System.out.println("\nWelcome to snap! Press enter to draw a card. \nThe game will end when a matching symbol is drawn.");
+        System.out.println("\n Welcome to snap! Type 'snap' when a matching symbol is drawn to win. \n Press enter to draw a card. ");
         nextTurn();
     }
 
