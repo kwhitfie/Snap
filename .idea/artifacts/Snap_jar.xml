@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Snap:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Snap_jar</output-path>
+    <root id="archive" name="Snap.jar">
+      <element id="module-output" name="Snap" />
+    </root>
+  </artifact>
+</component>

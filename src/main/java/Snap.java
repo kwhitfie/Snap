@@ -17,7 +17,7 @@ public class Snap extends CardGame{
     void start(){
         scanner = new Scanner(System.in);
         shuffleDeck();
-        System.out.println("\n Welcome to snap! Type 'snap' when a matching symbol is drawn to win. \n Press enter to draw a card. ");
+        System.out.println("\n Welcome to snap! Type 'snap' when a matching symbol is drawn to win. \n Press enter to draw a card. Player 1 is up first. ");
         nextTurn();
     }
 
